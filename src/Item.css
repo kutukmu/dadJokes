@@ -1,0 +1,117 @@
+.joke-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px solid rgba(148, 148, 148, 0.26);
+}
+
+.emoji i {
+  font-size: 26px;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(138, 138, 138, 0.562);
+  border-radius: 50%;
+}
+
+.counter {
+  width: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter button {
+  margin: 3px;
+}
+
+.joke-text {
+  width: 75%;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.emoji {
+  width: 10%;
+}
+
+.emoji:hover {
+  animation: spin 1s ease-in;
+}
+
+.circle {
+  border: 3px solid rgb(224, 68, 7);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(145, 145, 145, 0.555);
+  font-family: "Poppins";
+}
+
+i {
+  color: black;
+  margin: 5px;
+  cursor: pointer;
+  color: rgba(148, 148, 148, 0.767);
+}
+
+.up:hover {
+  animation: move-up 0.5s ease-in;
+  color: #4caf50;
+}
+
+.down:hover {
+  animation: move-down 0.5s ease-in;
+  color: #f44336;
+}
+
+@keyframes move-down {
+  0%,
+  50%,
+  75% {
+    transform: translateY(3px);
+  }
+  25%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up {
+  0%,
+  50%,
+  75% {
+    transform: translateY(-3px);
+  }
+  25%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(40deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
